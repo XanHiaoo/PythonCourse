@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # @Time : 2021/5/25 
 # @Author : XIAO
-# @File : E11-3190421049-肖涵.py
 import matplotlib.pyplot as plt
 from scipy import optimize
 from math import pi
