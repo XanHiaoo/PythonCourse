@@ -1,40 +1,82 @@
+#!/usr/bin/ python
+# -*- coding: utf-8 -*-
+# @Time : 2021/5/25 
+# @Author : XIAO
+import matplotlib.pyplot as plt
+from scipy import optimize
+from math import pi
+from math import cos
+import random
 import numpy as np
-from PIL import Image
-# im=Image.open('yong.jpg')
-# print(np.array(im))
-# print(np.array(im).shape)
-# im.show()
+import time
+from collections import Counter
 
+def f(x):
+    return x*cos(x)
+def getpoint(a,b):
+    return random.uniform(a,b),random.uniform(0,b)
 
-# import numpy as np
-# np.random.seed(12345)#seed( ) 用于指定随机数生成时所用算法开始的整数值，如果使用相同的seed( )值，则每次生成的随即数都相同
-#
-# nsteps = 1000
-# draws = np.random.randint(0, 2, size=nsteps)#函数的作用是，返回一个随机整型数,即[low, high)。
-# steps = np.where(draws > 0, 1, -1)#满足条件(condition)，输出x，不满足输出y
-#
-# walk = steps.cumsum()#返回沿给定轴的元素的累加和。
-# print(walk)
-#
-# print(walk.min())
-# print(walk.max())
-# max=(np.abs(walk) >= 10).argmax()#argmax返回的是最大数的索引
-# print(max)
-nwalks = 5000
-nsteps = 1000
-draws = np.random.randint(0, 2, size=(nwalks, nsteps)) # 输出随机数的尺寸，比如size = (m, n, k)，则输出数组的shape = (m, n, k)
-steps = np.where(draws > 0, 1, -1)
-walks = steps.cumsum(1)#按行累加
-walks
-# plt.plot(walk[:100])
-# plt.show()
-print(walks.max())
-print(walks.min())
-hits30 = (np.abs(walks) >= 30).any(1)
-print(hits30)
-print(hits30.sum()) # Number that hit 30 or -30
-crossing_times = (np.abs(walks[hits30]) >= 30).argmax(1)
-crossing_times.mean()
-steps = np.random.normal(loc=0, scale=0.25,
-                         size=(nwalks, nsteps))
-print(steps)
+def listmethod(a,b,ponitsize,*args):
+    start=time.perf_counter()
+    cntin = 0
+    cntout = 0
+    pointin = []
+    pointout = []
+
+    for i in range(ponitsize):
+        x1, y1 = getpoint(a, b)
+        if (y1 <= f(x1)):
+            pointin.append((x1, y1))
+            cntin += 1
+        else:
+            pointout.append((x1, y1))
+            cntout += 1
+    cost = (time.perf_counter() - start)
+    if(args):
+        x = [i / 100 for i in range(0, 150 * b)]
+        fy = [f(i) for i in x]
+        Liner_plot, = plt.plot(x, fy, label="y=x+sin(x*pi*20)/80")
+        plt.title('蒙特卡罗法求函数与x轴,x=a,x=b所围图形面积', fontproperties="SimHei", fontsize=15)
+        plt.xlim((0.8 * a, 1.2 * b))
+        plt.ylim((0, 1.1 * b))
+        plt.xlabel('X')
+        plt.ylabel('Y')
+        plt.axvline(x=a, c="g", ls="--", lw=2, label="x=a")
+        plt.axvline(x=b, c="g", ls="--", lw=2, label="x=b")
+        plt.axhline(y=b, c="g", ls="--", lw=2, label="y=b")
+        for point in pointin:
+            plt.scatter(point[0], point[1], marker='*', color='plum')
+        for point in pointout:
+            plt.scatter(point[0], point[1], marker='x', color='lightskyblue')
+        plt.show()
+
+    area = (b - a) * b * cntin / (cntin + cntout)
+    print('list方法————该所围图形面积约为：', area)
+    print("list方法耗时:{}s".format(cost))
+    return cost
+
+def numpymethod(a,b,ponitsize):
+    start = time.perf_counter()
+    np.random.seed()
+    x=np.random.uniform(a,b,ponitsize)
+    y=np.random.uniform(0,b,ponitsize)
+    fx=x*np.cos(x)
+    y-=fx
+    y = np.where(y > 0, 1, -1)
+    cnt=Counter(y)
+    area = (b - a) * b * cnt[-1] / ponitsize
+    cost = (time.perf_counter() - start)
+    print('numpy方法————该所围图形面积约为：', area)
+    print("numpy方法耗时:{}s".format(cost))
+    return cost
+
+print("蒙特卡洛方法，采用1000个随机点计算函数在[a,b]区间内与x轴,x=6,x=66所围图形面积:")
+a=6
+b=66
+listmethod(a,b,1000,True)
+numpymethod(a,b,1000)
+print("\n蒙特卡洛方法，采用10000000个随机点计算函数在[a,b]区间内与x轴,x=6,x=66所围图形面积,并测试numpy与list方法在大数据下的时间效率")
+cost1=listmethod(a,b,1000000)
+cost2=numpymethod(a,b,1000000)
+print("numpy方法的效率大约是list方法的{}倍".format(cost1/cost2))
+
