@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="19b48ccd-a52d-4a8d-9aef-2006e1e1b514" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/finalwork/资料/PythonForDataAnalysis-main/project_exploration_model-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalwork/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalwork/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalwork/资料/Estimation-of-Obesity-levels-based-on-Eating-habits-and-Physical-Conditions-using-ML-main/Estimation of obesity levels .ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/资料/Estimation-of-Obesity-levels-based-on-Eating-habits-and-Physical-Conditions-using-ML-main/Estimation of obesity levels .ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalwork/资料/Estimation-of-Obesity-levels-based-on-Eating-habits-and-Physical-Conditions-using-ML-main/Estimation of obesity levels EDA.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/资料/Estimation-of-Obesity-levels-based-on-Eating-habits-and-Physical-Conditions-using-ML-main/Estimation of obesity levels EDA.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalwork/资料/Estimation-of-obesity-levels-based-on-eating-habits-and-physical-condition-group-repository--main/DS-320 Project 1 (1).ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/资料/Estimation-of-obesity-levels-based-on-eating-habits-and-physical-condition-group-repository--main/DS-320 Project 1 (1).ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalwork/资料/PythonForDataAnalysis-main/project_exploration_model-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/资料/PythonForDataAnalysis-main/project_exploration_model-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/大作业/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/大作业/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,6 +51,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/finalwork/资料/PythonForDataAnalysis-main" />
   </component>
@@ -65,6 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623039865833</updated>
       <workItem from="1624036664574" duration="1711000" />
+      <workItem from="1624115453341" duration="989000" />
     </task>
     <servers />
   </component>
@@ -81,6 +110,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="779" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1624112390184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="779" y="435" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1624112390184" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonCourse$app_flask.coverage" NAME="app_flask 覆盖结果" MODIFIED="1624037968472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finalwork/资料/PythonForDataAnalysis-main" />
