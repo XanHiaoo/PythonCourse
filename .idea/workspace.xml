@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="19b48ccd-a52d-4a8d-9aef-2006e1e1b514" name="默认的" comment="1" />
+    <list default="true" id="19b48ccd-a52d-4a8d-9aef-2006e1e1b514" name="默认的" comment="1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalwork/.ipynb_checkpoints/ObesityData_analysis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/.ipynb_checkpoints/ObesityData_analysis-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalwork/ObesityData_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/finalwork/ObesityData_analysis.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1623039865833</updated>
       <workItem from="1624036664574" duration="1711000" />
-      <workItem from="1624204245833" duration="308000" />
+      <workItem from="1624204245833" duration="1419000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1624184466060</created>
@@ -74,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624204276169</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1624204561164</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624204561164</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
